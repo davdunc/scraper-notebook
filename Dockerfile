@@ -9,7 +9,7 @@ USER root
 
 # install system dependencies
 RUN apt-get update \
-    && apt-get -y install gcc make gnupg2 curl\
+    && apt-get -y install gcc make gnupg2 curl lxml\
     && rm -rf /var/lib/apt/lists/*s
 
 # install google chrome
